@@ -1,5 +1,5 @@
 let pokemones = [];
-let totalPokes = 1025;
+let totalPokes = 6;
 
 //conexion para obtener la lista de pokemon
 
@@ -27,8 +27,6 @@ async function General() {
   }
   Home();
 }
-
-General()
 
 async function FiltroConexion(filtroelegido){
     pokesFiltrados = await Conexion(filtroelegido)
