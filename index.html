@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/detalle.js" defer></script>
+  <script src="js/favoritos.js" defer></script>
+  <title>POKEAPI</title>
 </head>
 <body>
+  <nav>
+    <button onclick="Home()">Home</button>
+    <button onclick="informativa()">Informativa</button>
+    <button onclick="Favoritos()">Favoritos</button>
+    <button onclick="original()">Original</button>
+  </nav>
 
-    <nav><button onclick="Home()">Home</button>
-        <button  onclick="informativa()">Informativa</button>
-        <button  onclick="favoritos()">Favoritos</button>
-        <button  onclick="original()">Original</button>
-    </nav>
+  <div id="root"></div>
 
-<div id="root">
-    
-</div>
+  <!-- Resto de tus scripts -->
+  <script src="js/home.js"></script>
+  <script src="js/conexion.js"></script>
+  <script src="js/informativa.js"></script>
+  <script src="js/original.js"></script>
+  <script src="js/pokemon.js"></script>
 
-    <script src="js/home.js"></script>
-    <script src="js/conexion.js"> </script>
-    <script src="js/favoritos.js"></script>
-    <script src="js/informativa.js"></script>
-    <script src="js/original.js"></script>
-    <script src="js/pokemon.js"></script>
-    <script src="js/detalle.js"></script>
-
-
-    <script>
-         document.addEventListener("DOMContentLoaded",General)
-    </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", General);
+  </script>
 </body>
 </html>
